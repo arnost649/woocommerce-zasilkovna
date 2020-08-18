@@ -17,10 +17,20 @@ class WC_Zasilkovna_Pickup_Points_By_Country extends FilterIterator {
         case 'CZE':
             $this->country = 'cz';
             break;
-        case 'sk':
         case 'SK':
+        case 'sk':
         case 'SVK':
             $this->country = 'sk';
+            break;
+        case 'HU':
+        case 'hu':
+        case 'HUF':
+            $this->country = 'hu';
+            break;
+        case 'PL':
+        case 'pl':
+        case 'PLZ':
+            $this->country = 'pl';
             break;
         default:
             throw new Exception( __METHOD__ . ": invalid country " . $shipping_country );
